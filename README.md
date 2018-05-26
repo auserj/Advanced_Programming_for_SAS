@@ -31,7 +31,7 @@ I can apply AI algorithm to make analyses the datasets. Therefore, I can use the
 - The SAS Deployment Wizard and SAS Deployment Manager 9.4: User’s Guide is available at http://support.sas.com/deploywizug94.html
 
 ## Code
-source.sas
+regression.sas
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
