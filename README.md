@@ -1,4 +1,4 @@
-# SAS _ Correlation and Linear Regression    
+# Health Economics Datasets Analyses _ SAS    
 
 A program that analyzes the datasets by importing data from Access, correcting the large samples stepwise, testing skewness and kurtosis, running correlation, testing by adding interaction terms, etc. 
 
