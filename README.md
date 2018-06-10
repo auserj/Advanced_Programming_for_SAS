@@ -1,4 +1,4 @@
-# Health Economics Datasets Analyses _ SAS    
+# Health Economics _ SAS    
 
 A program that analyzes the datasets by importing data from Access, correcting the large samples stepwise, testing skewness and kurtosis, running correlation, testing by adding interaction terms, etc. 
 
