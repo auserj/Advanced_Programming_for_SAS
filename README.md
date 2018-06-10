@@ -12,12 +12,12 @@ A program that analyzes the datasets by importing data from Access, correcting t
    - Interpret, discuss, and present the finfdings 
    - Follow-Up   
 #### The Workflow of data: 
-     - Create structure
-     - Enter/Import data
-     - Clean data (Missing data/Outliers/data entry error)
-     - Describe data
-     - Transform data
-     - Create a Codebook 
+  - Create structure
+  - Enter/Import data
+  - Clean data (Missing data/Outliers/data entry error)
+  - Describe data
+  - Transform data
+  - Create a Codebook 
 #### Hypothesis Testing:
    -  Formaulate the Hypothesis 
    -  Choose the significant level 
@@ -26,12 +26,12 @@ A program that analyzes the datasets by importing data from Access, correcting t
    -  Make the test decision
    -  Interpret the results  
 #### Regression Analysis:
-    -  Check the regression analysis data requirements
-    -  Specify and estimate the regression model
-    -  Test the regression analysis assumptions
-    -  Interpret the regression results 
-    -  Validate the regression results
-    -  Use the regression model
+   -  Check the regression analysis data requirements
+   -  Specify and estimate the regression model
+   -  Test the regression analysis assumptions
+   -  Interpret the regression results 
+   -  Validate the regression results
+   -  Use the regression model
  
 ## Usage
 
