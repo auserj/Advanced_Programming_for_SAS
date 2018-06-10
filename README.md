@@ -1,12 +1,7 @@
 # Health Economics _ SAS    
 
+## Goal
 A program that analyzes the datasets by importing data from Access, correcting the large samples stepwise, testing skewness and kurtosis, running correlation, testing by adding interaction terms, etc. 
-
-## Background Knowledge
-I executed SAS program to do analyses of the Health economics datasets. For better-analyzing data and getting insights out of the datasets, I used SAS to clean the datasets and did both descriptive and predictive analyses including plotting graphs and running correlation.
-
-## Future Interests
-I can apply AI algorithm to make analyses the datasets. Therefore, I can use the machine learning to build the best-fit models for the data-sets. 
 
 ## Usage
 
