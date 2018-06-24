@@ -1,7 +1,7 @@
 Title "Regression on CDC Data";
 
 /****************************************************************/
-/* - Importing the Data                           				*/
+/* - Importing the Data                                         */
 /* - Connect to Access through DDE                            	*/
 /****************************************************************/
 options noxsync noxwait;
@@ -66,7 +66,7 @@ proc boxplot data=bmi2_DS1 ;
 run;
 
 /****************************************************************/
-/* Run a Regression_Bearing in mind the Correlations      */
+/* Run a Regression_Bearing in mind the Correlations            */
 /****************************************************************/
 proc reg data=BMI2_DS ;
 	Model BMI = SEQN Gender Age Weight2 day_of_week
@@ -83,7 +83,7 @@ proc reg data=BMI2_DS (obs=400);
 run;
 
 /****************************************************************/
-/* Correcting for large samples Stepwise              */
+/* Correcting for large samples Stepwise                        */
 /****************************************************************/
 ods graphics off;
 proc reg data=BMI2_DS ;
@@ -104,7 +104,7 @@ proc reg data=BMI2_DS (obs=400);
 run;
 
 /****************************************************************/
-/* Test Skewness and Kurtosis                        */
+/* Test Skewness and Kurtosis                                   */
 /****************************************************************/
 Title "Test Skewness and Kurtosis";
 proc means Data=BMI2_DS n min max mean var skewness kurtosis;
@@ -114,7 +114,7 @@ proc means Data=BMI2_DS n min max mean var skewness kurtosis;
 run;
 
 /****************************************************************/
-/* Correct for Skewness                              */
+/* Correct for Skewness                                         */
 /****************************************************************/
 Data BMI2a_DS; set BMI2_DS;
 	Ln_Dietary_Supplements_Taken = Dietary_Supplements_Taken;
@@ -134,7 +134,7 @@ proc means Data=BMI2a_DS n min max mean var skewness kurtosis;
 run;
 
 /****************************************************************/
-/* Run Regression                                */
+/* Run Regression                                               */
 /****************************************************************/
 ods graphics off;
 proc reg data=BMI2a_DS ;
@@ -160,7 +160,7 @@ proc reg data=BMI2a_DS ;
 run;
 
 /****************************************************************/
-/* taking the SQRT reduces skewness */
+/* taking the SQRT reduces skewness                             */
 /****************************************************************/
 Data BMI2b_DS; set BMI2_DS;
 	SQRT_Dietary_Supplements_Taken = Dietary_Supplements_Taken;
@@ -177,7 +177,7 @@ proc means Data=BMI2b_DS n min max mean var skewness kurtosis;
 run;
 
 /****************************************************************/
-/* Running Regressions.                                            */
+/* Running Regressions.                                         */
 /****************************************************************/
 Title "More Regressions";
 ods graphics on;
@@ -189,7 +189,7 @@ proc reg data=BMI2a_DS (obs=200);
 run;
 
 /****************************************************************/
-/*    More Regressions.                                 */
+/*    More Regressions.                                         */
 /****************************************************************/
 proc reg data=BMI2a_DS (obs=200);
 	Model Calcium_mg = Weight2 SEQN Gender Age day_of_week
@@ -199,7 +199,7 @@ proc reg data=BMI2a_DS (obs=200);
 run;
 
 /****************************************************************/
-/*  More Regressions.   */
+/*  More Regressions.                                           */
 /****************************************************************/
 proc reg data=BMI2a_DS ;
 	Model ln_Antacids_Taken = Calcium_mg Weight2 SEQN Gender
@@ -209,7 +209,7 @@ proc reg data=BMI2a_DS ;
 run;
 
 /****************************************************************/
-/* Mediation Check                     */
+/* Mediation Check                                              */
 /****************************************************************/
 Data Tasty; /* Reminder on reading csv files*/
 	infile "E:\Tasty.csv" delimiter=',' firstobs=2;
@@ -261,7 +261,7 @@ proc reg data=Tasty (obs=400);
 run;
 
 /****************************************************************/
-/*  Moderation   */
+/*  Moderation                                                  */
 /****************************************************************/
 ods graphics on;
 Title "Testing Moderation";
@@ -273,7 +273,7 @@ proc reg data=Tasty (obs=400); by adult;
 run;
 
 /****************************************************************/
-/*Testing by Adding Interaction Terms              */
+/*Testing by Adding Interaction Terms                           */
 /****************************************************************/
 data Tasty2; set Tasty;
 	Hunger_by_Adult = Hunger * Adult;
