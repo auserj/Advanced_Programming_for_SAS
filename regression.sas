@@ -1,3 +1,7 @@
+/* SAS Data Mining                                              */
+/* Advanced SAS Regression                                      */
+/* Author: David Li                                             */
+
 Title "Regression on CDC Data";
 
 /****************************************************************/
