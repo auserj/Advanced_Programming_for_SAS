@@ -69,8 +69,8 @@ Major topics include SQL processing with SAS and the SAS macro language, advance
 ## Code (Sample)
 - SAS_SQL_Access.sas	
 - SAS_Subsetting.sas
-- SAS_Correlation_and_Linear_Regression.sas
 - SAS_Functions.sas
+- SAS_Correlation_and_Linear_Regression.sas
 - SAS_Regression.sas
 - SAS_Graphing.sas
 
