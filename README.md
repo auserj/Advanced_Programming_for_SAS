@@ -1,7 +1,7 @@
 # Advanced_Programming_for_SAS 
 
 ## Goal
-This Repository helps you to learn the Advanced Programming for SAS and research methods. Major topics include SQL processing with SAS and the SAS macro language, advanced SAS programming techniques, and optimizing SAS programs.
+Major topics include SQL processing with SAS and the SAS macro language, advanced SAS programming techniques, and optimizing SAS programs. This Repository helps you to learn the Advanced Programming for SAS and research methods.
 
 ###  Research Process: 
    - Identify and formulate the problem                 
