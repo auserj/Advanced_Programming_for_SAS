@@ -2,7 +2,7 @@
 /* Author: David Li                                             */
 
 /****************************************************************/
-/*   Correlation and Linear Regression	 		                    */
+/*   Correlation and Linear Regression	 		        */
 /****************************************************************/
 proc IMPORT
 	DATAFILE = "C:\...\Online Purchase9.xls"
@@ -21,14 +21,14 @@ PROC IMPORT
 Run;
 
 /****************************************************************/
-/*  Correlation                        			                   	*/
+/*  Correlation                        			        */
 /****************************************************************/
 title "Pearson's correlation coefficient";
 proc Corr data=op;
 run;
 
 /****************************************************************/
-/*  check the .98 rho between Real_value and Price          		*/
+/*  check the .98 rho between Real_value and Price          	*/
 /****************************************************************/
 title "Show Relationship between Real Value and Price";
 proc gplot data=OP;
@@ -36,7 +36,7 @@ proc gplot data=OP;
 run;
 
 /****************************************************************/
-/*  Other lesser rhos                          	            		*/
+/*  Other lesser rhos                          	            	*/
 /****************************************************************/
 title "Lesser Rhos at -.05";
 proc gplot data=OP(obs=100);
@@ -68,7 +68,7 @@ proc Corr data=op KENDALL SPEARMAN;
 run;
 	
 /****************************************************************/
-/*  Produce a Reliability coefficient           	               */
+/*  Produce a Reliability coefficient           	        */
 /****************************************************************/
 title "Reliability coefficient Alpha";
 data op1; set op;
@@ -79,7 +79,7 @@ proc corr data=op1 nomiss alpha;
 run;
 
 /****************************************************************/
-/*  Adding graphics                             	             	*/
+/*  Adding graphics                             	        */
 /****************************************************************/
 title "Corr and Graphics";
 ods graphics on;
@@ -107,7 +107,7 @@ proc corr data=minitenders ;
 run;
 
 /****************************************************************/
-/*  Linear Regression   					                              */
+/*  Linear Regression   					*/
 /****************************************************************/
 proc IMPORT
 	DATAFILE = "C:\...\Online Purchase.xls"
@@ -125,7 +125,7 @@ proc corr data=op9;
 run;
 
 /****************************************************************/
-/*   Plot the data to search for problems         	            */
+/*   Plot the data to search for problems         	        */
 /****************************************************************/
 title "Plot the data to search for problems";
 proc reg data=op9;
@@ -134,7 +134,7 @@ proc reg data=op9;
 run;
 
 /****************************************************************/
-/*  Add A 95% Prediction Interval                 	            */
+/*  Add A 95% Prediction Interval                 	        */
 /****************************************************************/
 title "Add A 95% Prediction Interval";
 proc reg data=op9;
@@ -143,7 +143,7 @@ proc reg data=op9;
 run;
 
 /****************************************************************/
-/*   Plot the residuals                                     		*/
+/*   Plot the residuals                                     	*/
 /****************************************************************/
 title "Plot the residuals";
 proc reg data=op9;
@@ -162,7 +162,7 @@ proc reg data=op9;
 run;
 
 /****************************************************************/
-/*   standardized betas                                     		*/
+/*   standardized betas                                     	*/
 /****************************************************************/
 title "Standardized Betas";
 proc reg data=op9;
@@ -171,7 +171,7 @@ proc reg data=op9;
 run;
 
 /****************************************************************/
-/*  Adding Diagnostics                                      		*/
+/*  Adding Diagnostics                                      	*/
 /****************************************************************/
 title "Adding Diagnostics";
 proc reg data=op9;
@@ -181,7 +181,7 @@ proc reg data=op9;
 run;
 	
 /****************************************************************/
-/* Stepwise   						                                      */
+/* Stepwise   						        */
 /****************************************************************/
 ods graphics on;
 title "show Stepwise Linear Regression ";
@@ -195,7 +195,7 @@ run;
 ods graphics off;
 	
 /****************************************************************/
-/*  Identifying influential residuals                       		*/
+/*  Identifying influential residuals                       	*/
 /****************************************************************/
 title "Identifying influential residuals";
 proc means data=op9; var Percieved_Value;
@@ -212,12 +212,12 @@ proc reg data=op91;
 run;
 
 /****************************************************************/
-/*  Identifying the outlier                                  		*/
+/*  Identifying the outlier                                  	*/
 /****************************************************************/
 title "Identifying the outlier";
 proc reg data=op91;
 	model Percieved_Value =  Perceived_Risk Percieved_Utility;
-	output out=op91R    /* Saving the results as a dataset            */
+	output out=op91R          /* Saving the results as a dataset            */
 		p=yhat            /* p is the same as PREDICTED - var in dataset*/
 		r=yresid ;        /*r is the same as RESIDUAL                   */ 
 run;
@@ -226,7 +226,7 @@ proc print data=op91r (firstobs=85 obs=95);
 run;
 
 /****************************************************************/
-/* Alternatively, identify standardized residuals 		          */
+/* Alternatively, identify standardized residuals 	        */
 /****************************************************************/
 proc reg data=op91;
 	model Percieved_Value =  Perceived_Risk Percieved_Utility;
