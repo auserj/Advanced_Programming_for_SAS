@@ -185,7 +185,7 @@ Proc gplot data=OP4 (OBS=100);
 run;
 
 /****************************************************************/
-/*  Box Plot   */
+/*  Box Plot                                                    */
 /****************************************************************/
 Goptions reset=all;
 Title "Box Plot Demo ";
@@ -203,7 +203,7 @@ Proc boxplot data=box_plot_Prep;
 run;
 
 /****************************************************************/
-/*  More Complex Box Plots                          */
+/*  More Complex Box Plots                                      */
 /****************************************************************/
 Proc boxplot data=box_plot_Prep;
 	plot val2*code;
@@ -214,9 +214,9 @@ Proc boxplot data=box_plot_Prep;
 		header = 'Extreme values by Code';
 run;
 
-/****************************************************************
- * Many obs. per subject
-	****************************************************************/
+/****************************************************************/
+ * Many obs. per subject                                        */
+/****************************************************************/
 Title "Transpose";
 data Grades;
 	Input Name $ @;
@@ -252,7 +252,7 @@ run;
 
 /****************************************************************/
 /*        Transpose the datset and check the results
-	          Only the numeric data was transposed.             */
+	          Only the numeric data was transposed.         */
 /****************************************************************/
 Title "Transpose the datset";
 proc transpose data=grades out=Grades_transposed; 
@@ -314,7 +314,7 @@ proc print data=GT_lag;
 run;
 
 /****************************************************************/
-/*               Missing Keeps                              */
+/*               Missing Keeps                                  */
 /****************************************************************/
 Title "Missing Keeps";
 proc sort data=GT_lag; 
@@ -332,7 +332,7 @@ proc print data=GT_delta;
 run;
 
 /******************************************************************/
-/* Extra 3D graphs   */
+/* Extra 3D graphs                                                */
 /******************************************************************/
 goptions reset=all border cback=white htitle=12pt;
 /* Create the data set HAT */
