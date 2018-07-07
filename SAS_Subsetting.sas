@@ -14,7 +14,7 @@ proc print data=bmi (obs=20);
 run;
 
 /************************************************************************/
-/* Show Freq of Gender and Means of Weight, Height, Exercise and BMI   */
+/* Show Freq of Gender and Means of Weight, Height, Exercise and BMI    */
 /***********************************************************************/
 proc freq data=bmi; 
 	tables gender age; 
@@ -63,7 +63,7 @@ run;
 /*************************************************************/
 /* Interleaving
 	Determine the order in the unified dataset by the value in
-	a chosen column. */
+	a chosen column.                                     */
 /*************************************************************/
 Proc SORT data=males_only; 
 	by Height_Inches Weight_pounds;
@@ -78,7 +78,7 @@ run;
 
 /*************************************************************/
 /*Interleaving with Summary Data
-	Add a column with the z statistic of weight              */
+	Add a column with the z statistic of weight          */
 /* stage 1. Create the mean                                  */
 /*************************************************************/
 proc means data=unified_by_height
