@@ -1,4 +1,6 @@
-
+/* Advanced_Programming_for_SAS                                                 */ 
+/* Chapter 2 • Performing Advanced Queries Using PROC SQL                       */
+/* Author: David Li                                                             */
 
 /* Displaying All Columns in Output and an Expanded Column List in the SAS Log */
 proc sql feedback;
