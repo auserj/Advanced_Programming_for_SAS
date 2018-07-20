@@ -7,6 +7,7 @@ PROC SQL views
 - can be joined with tables or other views
 - can be derived from one or more tables, PROC SQL views, DATA step views, or SAS/ACCESS views.
 - extract underlying data, which enables you to access the most current data.
+
 Because PROC SQL views are not separate copies of data, they are referred to as virtual tables. They do not exist as independent entities like real tables. However, views use the same naming conventions as tables and can be used in SAS programs in place of an actual SAS table. Like tables, views are considered to be SAS data sets.
 
 ## Creating SQL Views
