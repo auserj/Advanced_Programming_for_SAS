@@ -1,7 +1,5 @@
 # Summary
 
-## Reviewing Terminology
-You can review definitions of terms that are important in this chapter. You can also review diagrams and descriptions of the various relationships between input sources for a table lookup operation.
 
 ## Working with Lookup Values Outside of SAS Data Sets
 You can use the IF-THEN/ELSE statement in the DATA step to combine data from a base table with lookup values that are not stored in a SAS data set. You can also use the FORMAT procedure or the ARRAY statement to combine data from a base table with lookup values that are not stored in a SAS data set.
