@@ -14,4 +14,5 @@ The FORCE option must be used if the DATA= data set contains variables that have
 - They are not in the BASE= data set.
 - They are longer than the variables in the BASE= data set.
 - They do not have the same type as the variables in the BASE= data set.
+
 The FORCE option can cause loss of data because of truncation or dropping of variables. The following table summarizes the consequences of using the FORCE option.
