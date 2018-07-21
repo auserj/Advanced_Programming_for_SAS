@@ -1,5 +1,5 @@
 /* Advanced_Programming_for_SAS                                                 */ 
-/* 417Chapter 12 • Storing Macro Programs                                       */
+/* Chapter 12 • Storing Macro Programs                                          */
 /* Author: David Li                                                             */
 
 
