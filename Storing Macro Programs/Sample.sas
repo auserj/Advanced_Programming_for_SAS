@@ -3,7 +3,7 @@
 /* Author: David Li                                                             */
 
 
-/*  Compiling an Externally Stored Macro Definition with the %INCLUDE Statement  */
+/* Compiling an Externally Stored Macro Definition with the %INCLUDE Statement  */
 %include 'c:\sasfiles\prtlast.sas' / source2;
 proc sort data=sasuser.courses out=bydays;
    by days;
