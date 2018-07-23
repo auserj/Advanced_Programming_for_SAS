@@ -64,7 +64,7 @@ Major topics include SQL processing with SAS and the SAS macro language, advance
 
 
 
-- Querying Data Efficiently
+- Querying Data 
 - Creating Functions with PROC FCMP
 
 ## Code (Sample)
