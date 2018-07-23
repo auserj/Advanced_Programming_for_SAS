@@ -20,12 +20,6 @@ The output data set contains several default variables.
 ## Merging the Transposed Data Set
 You might need to use a BY statement with PROC TRANSPOSE in order to correctly structure the data for a merge. For each BY group, PROC TRANSPOSE creates one observation for each variable that it transposes. The BY variable itself is not transposed. In order to structure the data for a merge, you might also need to sort the output data set. Any other source data sets might need to be reorganized and sorted as well. When the data is structured correctly, the data sets can be merged.
 
-## Using Hash Objects as Lookup Tables
-Beginning with SAS 9, the hash object is available for use in a DATA step. The hash object provides an efficient, convenient mechanism for quick data storage and retrieval.
-A hash object resembles a table with rows and columns; it contains a key component and a data component. Unlike an array, which uses a series of consecutive integers to address array elements, a hash object can use any combination of numeric and character values as addresses.
-The hash object is a DATA step component object. Component objects are data elements that consist of attributes and methods. To use a DATA step component object in your SAS program, you must first declare and create (instantiate) the object. After you declare the hash object's key and data components, you can populate the hash object from hardcoded values or a SAS data set.
-Use the FIND method call return code that is a numeric value. The value specifies whether the method succeeded or failed. A value of 0 indicates that the method succeeded. A nonzero value indicates that the method failed. The return code variable can be used in conditional logic to ensure that the FIND method found a KEY value in the hash object that matches the KEY value from the PDV.
-
 
 
 
