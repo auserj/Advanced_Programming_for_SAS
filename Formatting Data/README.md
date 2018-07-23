@@ -17,6 +17,7 @@ Because formats are saved as catalog entries, you use PROC CATALOG to copy, rena
 
 ## Using Custom Formats
 Once you have created a format, you can reference it as you would reference a SAS format. If you have stored the format in a location other than Work.Formats, you must use the FMTSEARCH= system option to add the location to the search path so that SAS can locate the format. It can be useful to change the default FMTERR system option to NOFMTERR. Changing the default system option enables SAS to substitute the w. or $w. format and continue processing if SAS does not find a format you reference.
+
 You can permanently associate a format with a variable by modifying the data set using PROC DATASETS.
 
 ## Creating Formats from SAS Data Sets
