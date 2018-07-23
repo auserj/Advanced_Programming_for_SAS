@@ -61,7 +61,7 @@ Major topics include SQL processing with SAS and the SAS macro language, advance
 - Modifying SAS Data Sets and Tracking Changes
 
 
-- Controlling Memory Usage 
+
 - Controlling Data Storage Space
 - Using Best Practices 
 - Querying Data Efficiently
