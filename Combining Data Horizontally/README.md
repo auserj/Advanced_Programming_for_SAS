@@ -1,6 +1,5 @@
 # Summary
 
-
 ## Working with Lookup Values Outside of SAS Data Sets
 You can use the IF-THEN/ELSE statement in the DATA step to combine data from a base table with lookup values that are not stored in a SAS data set. You can also use the FORMAT procedure or the ARRAY statement to combine data from a base table with lookup values that are not stored in a SAS data set.
 
