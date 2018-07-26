@@ -2,6 +2,7 @@
 
 ## Using Multidimensional Arrays
 When a lookup operation depends on more than one ordinal numeric key, you can use a multidimensional array. Use an ARRAY statement to create an array. The ARRAY statement defines a set of elements that you plan to process as a group.
+
 ## Using Stored Array Values
 In many cases, you might prefer to load an array with values that are stored in a SAS data set rather than loading them in an ARRAY statement. Lookup tables should be stored in a SAS data set when the following conditions are true:
 
