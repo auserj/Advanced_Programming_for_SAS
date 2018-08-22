@@ -1,5 +1,4 @@
 # Summary
-
 ## Using Indexes
 An index is a SAS file that is associated with a data set and that contains information about the location and the values of key variables in the data set. Indexes enable SAS to directly access specific observations rather than having to read all observations sequentially. An index can be simple or composite.
 
