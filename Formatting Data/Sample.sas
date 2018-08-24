@@ -1,6 +1,6 @@
-/* Advanced_Programming_for_SAS                                                 */ 
-/* Chapter 17 • Formatting Data                                                 */
-/* Author: David Li                                                             */
+/* Advanced_Programming_for_SAS                                                */ 
+/* Chapter 17 • Formatting Data                                                */
+/* Author: David Li                                                            */
 
 
 /* Creating a Multilabel Format  */
